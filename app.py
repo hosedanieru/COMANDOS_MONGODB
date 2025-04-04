@@ -123,7 +123,7 @@ imprimir_separador("13.Ejemplo de $lookup(union de colecciones)")
 pedido_id = pedidos.insert_one({
     "fecha":"2025-01-20",
     "cliente":"Ivan Malaver "
-    }).insert_id
+    }).inserted_id
 
 #Crear detalles del pedido
 detalles_pedido.insert_many([
